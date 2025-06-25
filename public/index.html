@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Pflanzen Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pflanzen Manager</h1>
+
+    <section id="groups">
+        <h2>Gruppen</h2>
+        <ul id="group-list"></ul>
+        <input id="group-name" placeholder="Gruppenname">
+        <button onclick="addGroup()">Hinzufügen</button>
+    </section>
+
+    <section id="plants">
+        <h2>Pflanzen</h2>
+        <ul id="plant-list"></ul>
+        <input id="plant-name" placeholder="Pflanzenname">
+        <input id="plant-group" placeholder="Gruppen-ID">
+        <input id="water-frequency" placeholder="Gießen (Tage)">
+        <input id="fertilizer-frequency" placeholder="Düngen (Tage)">
+        <button onclick="addPlant()">Hinzufügen</button>
+    </section>
+
+    <section id="waterings">
+        <h2>Gießvorgänge</h2>
+        <ul id="watering-list"></ul>
+        <input id="watering-plant" placeholder="Pflanzen-ID">
+        <input id="watering-date" type="date">
+        <button onclick="addWatering()">Eintragen</button>
+    </section>
+
+    <section id="fertilizations">
+        <h2>Düngungen</h2>
+        <ul id="fertilization-list"></ul>
+        <input id="fertilization-plant" placeholder="Pflanzen-ID">
+        <input id="fertilization-date" type="date">
+        <button onclick="addFertilization()">Eintragen</button>
+    </section>
+
+<script src="app.js"></script>
+</body>
+</html>
